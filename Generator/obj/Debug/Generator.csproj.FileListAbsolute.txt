@@ -1,0 +1,7 @@
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\bin\Debug\Generator.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\bin\Debug\Generator.pdb
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\obj\Debug\Generator.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\obj\Debug\Generator.pdb
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\obj\Debug\Generator.csprojResolveAssemblyReference.cache
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\bin\Debug\Generator.dll.CodeAnalysisLog.xml
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\bin\Debug\Generator.dll.lastcodeanalysissucceeded
