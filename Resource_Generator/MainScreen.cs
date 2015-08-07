@@ -111,14 +111,15 @@ namespace Resource_Generator
             
             var thumbs = new ImageList()
             {
-                ImageSize = new Size(70,60),
                 ColorDepth = ColorDepth.Depth16Bit
             };
 
             for (int i = 0; i < count; i++)
             {
-                Images[i] = Thumb.ResizeImage((Bitmap)Image.FromFile(paths[i]), 200, 200, true);
+                
+                Images[i] = Thumb.ResizeImage((Bitmap)Image.FromFile(paths[i]), 80, 80, true);
                 originalNames[i] = string.Format("img{0}", i);
+                thumbs.ImageSize = new Size(Images[i].Width, Images[i].Height);
                 thumbs.Images.Add(string.Format("{0}",i), Images[i]);
                 int c = i;
                 BeginInvoke(new Action(() =>
