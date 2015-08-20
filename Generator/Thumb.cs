@@ -1,30 +1,46 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace Generator
 {
     public static class Thumb
     {
-        public static Bitmap ResizeImage(Bitmap originalBitmap, int newWidth, int maxHeight, bool onlyResizeIfWider)
+        public static Image ResizeImage(Bitmap originalBitmap, int maxWidth, int maxHeight)
         {
-            if (onlyResizeIfWider)
+            Image thumbnail = new Bitmap(maxWidth, maxHeight);
+
+            int originalHeight = originalBitmap.Height;
+            int originalWidth = originalBitmap.Width;
+
+            using (var graphic = Graphics.FromImage(thumbnail))
             {
-                if (originalBitmap.Width <= newWidth)
-                {
-                    newWidth = originalBitmap.Width;
-                }
+                graphic.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphic.SmoothingMode = SmoothingMode.HighQuality;
+                graphic.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                graphic.CompositingQuality = CompositingQuality.HighQuality;
+
+                // Figure out the ratio
+                double ratioX = maxWidth/(double) originalWidth;
+                double ratioY = maxHeight/(double) originalHeight;
+
+                // use whichever multiplier is smaller
+                double ratio = ratioX < ratioY ? ratioX : ratioY;
+
+                // now we can get the new height and width
+                int newHeight = Convert.ToInt32(originalHeight*ratio);
+                int newWidth = Convert.ToInt32(originalWidth*ratio);
+
+                // Now calculate the X,Y position of the upper-left corner 
+                // (one of these will always be zero)
+                int posX = Convert.ToInt32((maxWidth - (originalWidth*ratio))/2);
+                int posY = Convert.ToInt32((maxHeight - (originalHeight*ratio))/2);
+
+                graphic.Clear(Color.Transparent); // white padding
+                graphic.DrawImage(originalBitmap, posX, posY, newWidth, newHeight);
             }
 
-            int newHeight = originalBitmap.Height * newWidth / originalBitmap.Width;
-            if (newHeight > maxHeight)
-            {
-                // Resize with height instead
-                newWidth = originalBitmap.Width * maxHeight / originalBitmap.Height;
-                newHeight = maxHeight;
-            }
-
-            var alteredImage = new Bitmap(originalBitmap, new Size(newWidth, newHeight));
-            return alteredImage;
+            return thumbnail;
         }
     }
 }

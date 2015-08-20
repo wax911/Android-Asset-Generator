@@ -202,7 +202,7 @@
             this.lstImages.MultiSelect = false;
             this.lstImages.Name = "lstImages";
             this.lstImages.ShowGroups = false;
-            this.lstImages.Size = new System.Drawing.Size(496, 211);
+            this.lstImages.Size = new System.Drawing.Size(509, 211);
             this.lstImages.TabIndex = 6;
             this.lstImages.UseCompatibleStateImageBehavior = false;
             this.lstImages.SelectedIndexChanged += new System.EventHandler(this.lstImages_SelectedIndexChanged);
@@ -342,9 +342,9 @@
             // 
             // prgLoadingimgs
             // 
-            this.prgLoadingimgs.Location = new System.Drawing.Point(518, 173);
+            this.prgLoadingimgs.Location = new System.Drawing.Point(531, 173);
             this.prgLoadingimgs.Name = "prgLoadingimgs";
-            this.prgLoadingimgs.Size = new System.Drawing.Size(162, 23);
+            this.prgLoadingimgs.Size = new System.Drawing.Size(149, 23);
             this.prgLoadingimgs.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prgLoadingimgs.TabIndex = 17;
             // 

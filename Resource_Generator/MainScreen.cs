@@ -117,7 +117,7 @@ namespace Resource_Generator
             for (int i = 0; i < count; i++)
             {
                 
-                Images[i] = Thumb.ResizeImage((Bitmap)Image.FromFile(paths[i]), 80, 80, true);
+                Images[i] = Thumb.ResizeImage((Bitmap)Image.FromFile(paths[i]), 80, 80);
                 originalNames[i] = string.Format("img{0}", i);
                 thumbs.ImageSize = new Size(Images[i].Width, Images[i].Height);
                 thumbs.Images.Add(string.Format("{0}",i), Images[i]);
@@ -191,7 +191,7 @@ namespace Resource_Generator
 
             if (count != 0)
             {
-                prgConversion.Maximum = (res.Length + (count));
+                prgConversion.Maximum = (res.Length + (count-1));
                 prgLoadingimgs.Maximum = count;
                 Images = new Image[count];
                 originalNames = new string[count];
