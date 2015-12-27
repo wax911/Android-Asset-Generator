@@ -1,0 +1,8 @@
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\bin\Debug\GeneratorTests.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\bin\Debug\GeneratorTests.pdb
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\bin\Debug\Generator.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\bin\Debug\Generator.pdb
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\obj\Debug\GeneratorTests.csprojResolveAssemblyReference.cache
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\obj\Debug\GeneratorTests.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\GeneratorTests\obj\Debug\GeneratorTests.pdb

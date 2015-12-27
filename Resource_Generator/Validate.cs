@@ -9,7 +9,7 @@ namespace Resource_Generator
     {
         private static string rule;
         private static Regex regex;
-        private static readonly string[] rules = { @"^[a-zA-Z]+$", @"^[0-9]+$", @"^[A-Za-z0-9]+$" };
+        private static readonly string[] rules = { @"^[a-zA-Z]+$", @"^[0-9]+$", @"^[A-Za-z0-9]+$"};
 
         public bool Validator(string info, RulesEx eRegex)
         {
@@ -24,6 +24,8 @@ namespace Resource_Generator
                     break;
                 case RulesEx.numberandletters:
                     rule = rules[2];
+                    break;
+                default:
                     break;
             }
             #endregion

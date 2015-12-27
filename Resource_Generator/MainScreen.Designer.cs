@@ -119,18 +119,18 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -166,7 +166,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
             // label2
@@ -202,7 +202,7 @@
             this.lstImages.MultiSelect = false;
             this.lstImages.Name = "lstImages";
             this.lstImages.ShowGroups = false;
-            this.lstImages.Size = new System.Drawing.Size(509, 211);
+            this.lstImages.Size = new System.Drawing.Size(477, 211);
             this.lstImages.TabIndex = 6;
             this.lstImages.UseCompatibleStateImageBehavior = false;
             this.lstImages.SelectedIndexChanged += new System.EventHandler(this.lstImages_SelectedIndexChanged);
@@ -342,16 +342,16 @@
             // 
             // prgLoadingimgs
             // 
-            this.prgLoadingimgs.Location = new System.Drawing.Point(531, 173);
+            this.prgLoadingimgs.Location = new System.Drawing.Point(499, 173);
             this.prgLoadingimgs.Name = "prgLoadingimgs";
-            this.prgLoadingimgs.Size = new System.Drawing.Size(149, 23);
+            this.prgLoadingimgs.Size = new System.Drawing.Size(181, 23);
             this.prgLoadingimgs.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prgLoadingimgs.TabIndex = 17;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(550, 157);
+            this.label6.Location = new System.Drawing.Point(499, 157);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 13);
             this.label6.TabIndex = 18;

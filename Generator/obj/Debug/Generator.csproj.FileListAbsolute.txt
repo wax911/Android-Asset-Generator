@@ -1,0 +1,4 @@
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\bin\Debug\Generator.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\bin\Debug\Generator.pdb
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\obj\Debug\Generator.dll
+C:\Users\Maxwell\Documents\Visual Studio 2012\Projects\Resource_Generator\Generator\obj\Debug\Generator.pdb

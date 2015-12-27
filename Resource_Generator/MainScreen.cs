@@ -116,10 +116,10 @@ namespace Resource_Generator
 
             for (int i = 0; i < count; i++)
             {
-                
-                Images[i] = Thumb.ResizeImage((Bitmap)Image.FromFile(paths[i]), 80, 80);
-                originalNames[i] = string.Format("img{0}", i);
-                thumbs.ImageSize = new Size(Images[i].Width, Images[i].Height);
+                Images[i] = Thumb.ResizeImage((Bitmap)Image.FromFile(paths[i]), 180, 180);
+                //file names
+                originalNames[i] = string.Format("{0}",paths[i].Remove(0,paths[i].LastIndexOf(@"\")+1));
+                thumbs.ImageSize = Images[i].Size;
                 thumbs.Images.Add(string.Format("{0}",i), Images[i]);
                 int c = i;
                 BeginInvoke(new Action(() =>
@@ -150,7 +150,7 @@ namespace Resource_Generator
                         count = 1;
                         Images = new Image[count];
                         txtDirectory.Text = opf.FileName;
-                        paths = new [] {txtDirectory.Text};
+                        paths = new [] {txtDirectory.Text};                        
                         originalNames = new [] {opf.SafeFileName};
                         prgLoadingimgs.Maximum = count;
                         prgConversion.Maximum = (res.Length);
@@ -172,7 +172,7 @@ namespace Resource_Generator
                 switch (fdl.ShowDialog())
                 {
                     case DialogResult.OK:
-                        txtDirectory.Text = fdl.SelectedPath;
+                        txtDirectory.Text = fdl.SelectedPath;                        
                         LoadDirecoryItems();
                         break;
                     
